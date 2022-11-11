@@ -1,0 +1,29 @@
+- Database: gideoes
+
+-- DROP DATABASE gideoes;
+
+CREATE DATABASE gideoes
+  WITH OWNER = postgres
+       ENCODING = 'UTF8'
+       TABLESPACE = pg_default
+       LC_COLLATE = 'Portuguese_Brazil.1252'
+       LC_CTYPE = 'Portuguese_Brazil.1252'
+       CONNECTION LIMIT = -1;
+
+       
+       -- Table: public.gd_login
+
+-- DROP TABLE public.gd_login;
+
+CREATE TABLE public.gd_login
+(
+  login character varying(200),
+  senha character varying(200),
+  CONSTRAINT unique_gd UNIQUE (login)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.gd_login
+  OWNER TO postgres;
+       
