@@ -31,10 +31,12 @@ h5 {
 
 h6 {
 	position: absolute;
-	top: 80%;
+	top: 12%;
 	left: 33%;
 	right: 33%;
-	color: red;
+	color: #664d03;
+    background-color: #fff3cd;
+    border-color: #ffecb5;
 }
 
 
@@ -42,19 +44,19 @@ h6 {
 </head>
 
 <body>
-<h5> Seja Bem Vindo ao Clube Gideões</h5>
+<h5> Seja Bem Vindo ao Sistema</h5>
 <form action="ServletLogin" method="post"
 		class="row g-3   needs-validation" novalidate>
 
 
-		<div class="col-md-6">
+		<div class="mb-3">
 			<label class="form-label">Login</label> <input class="form-control"
 				name="login" type="text" required="required">
 		</div>
 		<div class="invalid-feedback">Informe o Login!</div>
 
 
-		<div class="col-md-6">
+		<div class="mb-3">
 			<label class="form-label">Senha</label> <input class="form-control"
 				name="senha" type="password" required="required">
 		</div>
